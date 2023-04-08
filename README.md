@@ -55,3 +55,12 @@ Repo of the published paper: https://github.com/PlusLabNLP/X-Gear
   `model_path` would be `best_model.mdl` inside logs(having year, date and time format) folder of `output`.
   `prediction_dir` could be any directory name of where you want to store the predictions.
   
+### Authors
+
+```
+  Ramaswamy Iyappan, Masters in Computer Science, riyappan@gmu.edu
+  Abhijeet Banerjee, Masters in Computer Science, abanerj@gmu.edu
+  Bhargava Canakapally, Masters in Computer Science, bcanakap@gmu.edu
+  Title: Exploring X-GEAR for Zero-Shot Cross-Lingual Event Argument Extraction
+  Organization: George Mason University
+  Year: 2023
