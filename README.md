@@ -52,4 +52,6 @@ Repo of the published paper: https://github.com/PlusLabNLP/X-Gear
   ```
   ./scripts/eval_ace05.sh [model_path] [prediction_dir]
   ```
+  `model_path` would be `best_model.mdl` inside logs(having year, date and time format) folder of `output`.
+  `prediction_dir` could be any directory name of where you want to store the predictions.
   
