@@ -1,6 +1,6 @@
-## X-Gear: Multilingual Generative Language Models for Zero-Shot Cross-Lingual Event Argument Extraction
+## Exploring X-GEAR for Zero-Shot Cross-Lingual Event Argument Extraction
 
-Code for our ACL-2022 paper [Multilingual Generative Language Models for Zero-Shot Cross-Lingual Event Argument Extraction](https://arxiv.org/abs/2203.08308).
+Reproducing ACL-2022 paper [Multilingual Generative Language Models for Zero-Shot Cross-Lingual Event Argument Extraction](https://arxiv.org/abs/2203.08308).
 
 
 ### Setup 
@@ -57,22 +57,3 @@ We provide our pre-trained models and show their performances as follows.
 | [X-Gear-ace05-mT5-large+copy-en](https://drive.google.com/file/d/1vnnz7RU_AcZNHqXS9Jnt5yK-DCZoEu5i/view?usp=sharing) |   75.16  |   71.85  |   54.18  |   50.00  |   63.14  |   58.40  |
 | [X-Gear-ace05-mT5-large+copy-ar](https://drive.google.com/file/d/1ZHw5lbE_jwOvRCe-g4q3q1cZfU24LsG7/view?usp=sharing) |   38.81  |   34.57  |   73.49  |   67.75  |   39.26  |   36.13  |
 | [X-Gear-ace05-mT5-large+copy-zh](https://drive.google.com/file/d/1bmyspgMln3VUo6nqJu21SFD8E1IRQipn/view?usp=sharing) |   61.44  |   55.40  |   38.71  |   36.14  |   70.45  |   66.99  |
-
-**ERE**
-|                              | en Arg-I | en Arg-C | es Arg-I | es Arg-C |
-|------------------------------|:--------:|:--------:|:--------:|:--------:|
-| [X-Gear-ere-mT5-base+copy-en](https://drive.google.com/file/d/1nveyxokfhoBA87CQ4PSegswPF6lR4NWl/view?usp=sharing)  |   78.26  |   71.55  |   64.31  |   58.70  |
-| [X-Gear-ere-mT5-base+copy-es](https://drive.google.com/file/d/1CFBGkDX9s7FetQtOsjznX7J1M7WALI-d/view?usp=sharing)  |   69.21  |   59.79  |   70.67  |   66.37  |
-| [X-Gear-ere-mT5-large+copy-en](https://drive.google.com/file/d/1XF3liJaznRr7OsjVx1WO8jqm6YigsHRv/view?usp=sharing) |   78.10  |   73.04  |   64.82  |   60.35  |
-| [X-Gear-ere-mT5-large+copy-es](https://drive.google.com/file/d/1IWKCKHztZhE6gMfV8gqkZfru8i5d9XCA/view?usp=sharing) |   69.03  |   63.73  |   71.47  |   68.49  |
-
-### Citation
-
-If you find that the code is useful in your research, please consider citing our paper.
-
-    @inproceedings{acl2022xgear,
-        author    = {Kuan-Hao Huang and I-Hung Hsu and Premkumar Natarajan and Kai-Wei Chang and Nanyun Peng},
-        title     = {Multilingual Generative Language Models for Zero-Shot Cross-Lingual Event Argument Extraction},
-        booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL)},
-        year      = {2022},
-    }
