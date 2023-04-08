@@ -2,27 +2,30 @@
 
 Reproducing ACL-2022 paper [Multilingual Generative Language Models for Zero-Shot Cross-Lingual Event Argument Extraction](https://arxiv.org/abs/2203.08308).
 
+Repo of the published paper: https://github.com/PlusLabNLP/X-Gear
 
 ### Setup 
 
   - Python=3.8.6-ff
   ```
-  $ module load python/3.8.6-ff
+  module load python/3.8.6-ff
   ```
   - Create environment
   ```
-  $ python -m venv <env_name>
-    source <env_name>/bin/activate
+  python -m venv <env_name>
+  source <env_name>/bin/activate
   ```
-  <env> name can be any name.
+  env_name can be any name.
   
 ### Connect to a GPU
   
   Run the following command to connect to a GPU and assign jobs in the Cluster.
   ```
-  $ salloc -p gpuq -q gpu --nodes=1 --ntasks-per-node=1 --gres=gpu:A100.80gb:1 --mem=90G --cpus-per-task=24
+  salloc -p gpuq -q gpu --nodes=1 --ntasks-per-node=1 --gres=gpu:A100.80gb:1 --mem=90G --cpus-per-task=24
   ```
-
+  
+  You can modify the arguments of this command based on specific needs and resources.
+  
 ### Training
 
 - Run `./scripts/generate_data_ace05.sh` to generate training examples of different languages for X-Gear. 
@@ -34,7 +37,7 @@ Reproducing ACL-2022 paper [Multilingual Generative Language Models for Zero-Sho
   ```
   
   This trains X-Gear with mT5-base + copy mechanisim for ACE-05 English. The model will be saved in `./output/`.
-  You can modify the arguments in the config file or replace the config file with other files in `./config/`.
+  You can modify the arguments in the config file.
   
 ### Evaluating
 
