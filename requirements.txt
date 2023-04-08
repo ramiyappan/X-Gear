@@ -1,0 +1,9 @@
+transformers
+tensorboardX
+SentencePiece
+stanza
+ipdb
+lxml
+bs4
+nltk
+jieba
