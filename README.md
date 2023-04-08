@@ -17,6 +17,11 @@ Repo of the published paper: https://github.com/PlusLabNLP/X-Gear
   ```
   env_name can be any name.
   
+  - install all required dependencies using `requirements.txt`.
+  ```
+  pip install -r requirements.txt
+  ```
+  
 ### Connect to a GPU
   
   Run the following command to connect to a GPU and assign jobs in the Cluster.
@@ -38,6 +43,7 @@ Repo of the published paper: https://github.com/PlusLabNLP/X-Gear
   
   This trains X-Gear with mT5-base + copy mechanisim for ACE-05 English. The model will be saved in `./output/`.
   You can modify the arguments in the config file.
+  You can use `./config/config_ace05_mT5copy-base_ar.json` and `./config/config_ace05_mT5copy-base_zh.json` to train with copy mechanisim for ACE-05 Arabic and Chinese respectively.
   
 ### Evaluating
 
