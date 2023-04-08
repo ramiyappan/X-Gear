@@ -5,21 +5,29 @@ Reproducing ACL-2022 paper [Multilingual Generative Language Models for Zero-Sho
 
 ### Setup 
 
-  - Python=3.7.10
+  - Python=3.8.6-ff
   ```
-  $ conda env create -f environment.yml
+  $ module load python/3.8.6-ff
   ```
-
-### Data and Preprocessing
-
-- Go into the folder `./preprocessing/`
-- If you follow the instruction in the README.md, then you can get your data in the folder `./processed_data/`
+  - Create environment
+  ```
+  $ python -m venv <env_name>
+    source <env_name>/bin/activate
+  ```
+  <env> name can be any name.
+  
+### Connect to a GPU
+  
+  Run the following command to connect to a GPU and assign jobs in the Cluster.
+  ```
+  $ salloc -p gpuq -q gpu --nodes=1 --ntasks-per-node=1 --gres=gpu:A100.80gb:1 --mem=90G --cpus-per-task=24
+  ```
 
 ### Training
 
-- Run `./scripts/generate_data_ace05.sh` and `./scripts/generate_data_ere.sh` to generate training examples of different languages for X-Gear. 
+- Run `./scripts/generate_data_ace05.sh` to generate training examples of different languages for X-Gear. 
   The generated training data will be saved in `./finetuned_data/`.
-- Run `./scripts/train_ace05.sh` or `./scripts/train_ere.sh` to train X-Gear. Alternatively, you can run the following command.
+- Run `./scripts/train_ace05.sh` to train X-Gear. Alternatively, you can run the following command.
 
   ```
   python ./xgear/train.py -c ./config/config_ace05_mT5copy-base_en.json
@@ -36,24 +44,3 @@ Reproducing ACL-2022 paper [Multilingual Generative Language Models for Zero-Sho
   ./scripts/eval_ace05.sh [model_path] [prediction_dir]
   ```
   
-  If you want to test X-Gear with mT5-large, remember to modify the config file in `./scripts/eval_ace05.sh`.
-  
-- Run the following script to evaluate the performance for ERE English and Spanish.
-
-  ```
-  ./scripts/eval_ere.sh [model_path] [prediction_dir]
-  ```
-  
-  If you want to test X-Gear with mT5-large, remember to modify the config file in `./scripts/eval_ere.sh`.
-  
-We provide our pre-trained models and show their performances as follows.
-
-**ACE-05**
-|                          | en Arg-I | en Arg-C | ar Arg-I | ar Arg-C | zh Arg-I | zh Arg-C |
-|--------------------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| [X-Gear-ace05-mT5-base+copy-en](https://drive.google.com/file/d/11dO7qI4sFcZM4OfPn7txavJcv0jtESQT/view?usp=sharing)  |   73.39  |   69.28  |   47.64  |   42.09  |   57.81  |   54.46  |
-| [X-Gear-ace05-mT5-base+copy-ar](https://drive.google.com/file/d/1wBVFo1NBVEDOP2Kf3JPgEuhk0xaezBjK/view?usp=sharing)  |   33.87  |   27.17  |   72.97  |   66.92  |   31.14  |   28.84  |
-| [X-Gear-ace05-mT5-base+copy-zh](https://drive.google.com/file/d/10Vnk1-wKU-zZ7AtxB89o-Baf6KHDAtJ7/view?usp=sharing)  |   59.85  |   55.15  |   38.04  |   34.88  |   72.93  |   68.99  |
-| [X-Gear-ace05-mT5-large+copy-en](https://drive.google.com/file/d/1vnnz7RU_AcZNHqXS9Jnt5yK-DCZoEu5i/view?usp=sharing) |   75.16  |   71.85  |   54.18  |   50.00  |   63.14  |   58.40  |
-| [X-Gear-ace05-mT5-large+copy-ar](https://drive.google.com/file/d/1ZHw5lbE_jwOvRCe-g4q3q1cZfU24LsG7/view?usp=sharing) |   38.81  |   34.57  |   73.49  |   67.75  |   39.26  |   36.13  |
-| [X-Gear-ace05-mT5-large+copy-zh](https://drive.google.com/file/d/1bmyspgMln3VUo6nqJu21SFD8E1IRQipn/view?usp=sharing) |   61.44  |   55.40  |   38.71  |   36.14  |   70.45  |   66.99  |
