@@ -1,5 +1,5 @@
 {
-    "dataset": "ace05", 
+    "dataset": "ace05",  
     "lang": "english", 
     "gpu_device": 0,
     "seed": 0,
