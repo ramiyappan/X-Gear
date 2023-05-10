@@ -7,7 +7,7 @@ from model import GenerativeModel
 from data import GenDataset
 from utils import Summarizer, compute_f1
 from argparse import ArgumentParser, Namespace
-
+  
 # configuration
 parser = ArgumentParser()
 parser.add_argument('-c', '--config', required=True)
