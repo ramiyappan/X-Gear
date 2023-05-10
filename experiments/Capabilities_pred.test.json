@@ -1,0 +1,2448 @@
+[
+    {
+        "input text": "Britis Chancellor of the Exchequr Gordon Browen on Tuedsay namd the current head of the countrys energy regulator as the new chaimran of finnce wachdog the Financil Services Authoriy (FSA) . <--triggerword--> named <--template--> <--Person--> [None] </--Person--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> head </--Person--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> head </--Person--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                12,
+                13,
+                "Person"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "head",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "named",
+            "trigger span": [
+                9,
+                10
+            ],
+            "event type": "Personnel:Nominate",
+            "arguments": {
+                "Person": [
+                    {
+                        "argument text": "head",
+                        "argument span": [
+                            12,
+                            13
+                        ]
+                    }
+                ]
+            },
+            "passage": "British Chancellor of the Exchequer Gordon Brown on Tuesday named the current head of the country 's energy regulator as the new chairman of finance watchdog the Financial Services Authority ( FSA ) .",
+            "tokens": [
+                "British",
+                "Chancellor",
+                "of",
+                "the",
+                "Exchequer",
+                "Gordon",
+                "Brown",
+                "on",
+                "Tuesday",
+                "named",
+                "the",
+                "current",
+                "head",
+                "of",
+                "the",
+                "country",
+                "'s",
+                "energy",
+                "regulator",
+                "as",
+                "the",
+                "new",
+                "chairman",
+                "of",
+                "finance",
+                "watchdog",
+                "the",
+                "Financial",
+                "Services",
+                "Authority",
+                "(",
+                "FSA",
+                ")",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Former seior banker Callumm McCarth begins what is one of the most impotant jobs in London's financial wrld in Septembr, when incmbent Howard Dais step down . <--triggerword--> Former <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> Callum McCarthy </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> Callumm McCarth </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                3,
+                5,
+                "Person"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Callumm McCarth",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "Former",
+            "trigger span": [
+                0,
+                1
+            ],
+            "event type": "Personnel:End-Position",
+            "arguments": {
+                "Person": [
+                    {
+                        "argument text": "Callum McCarthy",
+                        "argument span": [
+                            3,
+                            5
+                        ]
+                    }
+                ]
+            },
+            "passage": "Former senior banker Callum McCarthy begins what is one of the most important jobs in London 's financial world in September , when incumbent Howard Davies steps down .",
+            "tokens": [
+                "Former",
+                "senior",
+                "banker",
+                "Callum",
+                "McCarthy",
+                "begins",
+                "what",
+                "is",
+                "one",
+                "of",
+                "the",
+                "most",
+                "important",
+                "jobs",
+                "in",
+                "London",
+                "'s",
+                "financial",
+                "world",
+                "in",
+                "September",
+                ",",
+                "when",
+                "incumbent",
+                "Howard",
+                "Davies",
+                "steps",
+                "down",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Former seior banker Callumm McCarth begins what is one of the most impotant jobs in London's financial wrld in Septembr, when incmbent Howard Dais step down . <--triggerword--> begins <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> Callum McCarthy </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> Callumm McCarth </--Person--> <--Entity--> [None] </--Entity--> <--Place--> London </--Place-->",
+        "gold arguments": [
+            [
+                3,
+                5,
+                "Person"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Callumm McCarth",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "London",
+                "Place",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 1,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "begins",
+            "trigger span": [
+                5,
+                6
+            ],
+            "event type": "Personnel:Start-Position",
+            "arguments": {
+                "Person": [
+                    {
+                        "argument text": "Callum McCarthy",
+                        "argument span": [
+                            3,
+                            5
+                        ]
+                    }
+                ]
+            },
+            "passage": "Former senior banker Callum McCarthy begins what is one of the most important jobs in London 's financial world in September , when incumbent Howard Davies steps down .",
+            "tokens": [
+                "Former",
+                "senior",
+                "banker",
+                "Callum",
+                "McCarthy",
+                "begins",
+                "what",
+                "is",
+                "one",
+                "of",
+                "the",
+                "most",
+                "important",
+                "jobs",
+                "in",
+                "London",
+                "'s",
+                "financial",
+                "world",
+                "in",
+                "September",
+                ",",
+                "when",
+                "incumbent",
+                "Howard",
+                "Davies",
+                "steps",
+                "down",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Davies is leavig to becom chairman of the Lodon School of Ecnomics, on of the best-kown prts of the Universty of London . <--triggerword--> leaving <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> Davies </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> Davies </--Person--> <--Entity--> Lodon School of Ecnomics </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                0,
+                1,
+                "Person"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Davies",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "Lodon School of Ecnomics",
+                "Entity",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "leaving",
+            "trigger span": [
+                2,
+                3
+            ],
+            "event type": "Personnel:End-Position",
+            "arguments": {
+                "Person": [
+                    {
+                        "argument text": "Davies",
+                        "argument span": [
+                            0,
+                            1
+                        ]
+                    }
+                ]
+            },
+            "passage": "Davies is leaving to become chairman of the London School of Economics , one of the best - known parts of the University of London .",
+            "tokens": [
+                "Davies",
+                "is",
+                "leaving",
+                "to",
+                "become",
+                "chairman",
+                "of",
+                "the",
+                "London",
+                "School",
+                "of",
+                "Economics",
+                ",",
+                "one",
+                "of",
+                "the",
+                "best",
+                "-",
+                "known",
+                "parts",
+                "of",
+                "the",
+                "University",
+                "of",
+                "London",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Davies is leavig to becom chairman of the Lodon School of Ecnomics, on of the best-kown prts of the Universty of London . <--triggerword--> become <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> Davies </--Person--> <--Entity--> London School of Economics </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> Davies </--Person--> <--Entity--> Lodon School of Ecnomics </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                0,
+                1,
+                "Person"
+            ],
+            [
+                8,
+                12,
+                "Entity"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Davies",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "Lodon School of Ecnomics",
+                "Entity",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 2,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "become",
+            "trigger span": [
+                4,
+                5
+            ],
+            "event type": "Personnel:Start-Position",
+            "arguments": {
+                "Person": [
+                    {
+                        "argument text": "Davies",
+                        "argument span": [
+                            0,
+                            1
+                        ]
+                    }
+                ],
+                "Entity": [
+                    {
+                        "argument text": "London School of Economics",
+                        "argument span": [
+                            8,
+                            12
+                        ]
+                    }
+                ]
+            },
+            "passage": "Davies is leaving to become chairman of the London School of Economics , one of the best - known parts of the University of London .",
+            "tokens": [
+                "Davies",
+                "is",
+                "leaving",
+                "to",
+                "become",
+                "chairman",
+                "of",
+                "the",
+                "London",
+                "School",
+                "of",
+                "Economics",
+                ",",
+                "one",
+                "of",
+                "the",
+                "best",
+                "-",
+                "known",
+                "parts",
+                "of",
+                "the",
+                "University",
+                "of",
+                "London",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "As well as previously holding seneor postions at Barclys Bnk, BZW and Kleinwrt Bnson, McCrthy was frmerly a top cvil servant at the Deparment of Trade nd Indstry . <--triggerword--> previously <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> McCarthy </--Person--> <--Entity--> Barclays Bank [and] BZW [and] Kleinwort Benson </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> McCrthy </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                11,
+                12,
+                "Entity"
+            ],
+            [
+                13,
+                15,
+                "Entity"
+            ],
+            [
+                16,
+                17,
+                "Person"
+            ],
+            [
+                8,
+                10,
+                "Entity"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "McCrthy",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 4,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "previously",
+            "trigger span": [
+                3,
+                4
+            ],
+            "event type": "Personnel:End-Position",
+            "arguments": {
+                "Entity": [
+                    {
+                        "argument text": "Barclays Bank",
+                        "argument span": [
+                            8,
+                            10
+                        ]
+                    },
+                    {
+                        "argument text": "BZW",
+                        "argument span": [
+                            11,
+                            12
+                        ]
+                    },
+                    {
+                        "argument text": "Kleinwort Benson",
+                        "argument span": [
+                            13,
+                            15
+                        ]
+                    }
+                ],
+                "Person": [
+                    {
+                        "argument text": "McCarthy",
+                        "argument span": [
+                            16,
+                            17
+                        ]
+                    }
+                ]
+            },
+            "passage": "As well as previously holding senior positions at Barclays Bank , BZW and Kleinwort Benson , McCarthy was formerly a top civil servant at the Department of Trade and Industry .",
+            "tokens": [
+                "As",
+                "well",
+                "as",
+                "previously",
+                "holding",
+                "senior",
+                "positions",
+                "at",
+                "Barclays",
+                "Bank",
+                ",",
+                "BZW",
+                "and",
+                "Kleinwort",
+                "Benson",
+                ",",
+                "McCarthy",
+                "was",
+                "formerly",
+                "a",
+                "top",
+                "civil",
+                "servant",
+                "at",
+                "the",
+                "Department",
+                "of",
+                "Trade",
+                "and",
+                "Industry",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "As well as previously holding seneor postions at Barclys Bnk, BZW and Kleinwrt Bnson, McCrthy was frmerly a top cvil servant at the Deparment of Trade nd Indstry . <--triggerword--> formerly <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> McCarthy </--Person--> <--Entity--> Department of Trade and Industry </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> McCrthy </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                25,
+                30,
+                "Entity"
+            ],
+            [
+                16,
+                17,
+                "Person"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "McCrthy",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 2,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "formerly",
+            "trigger span": [
+                18,
+                19
+            ],
+            "event type": "Personnel:End-Position",
+            "arguments": {
+                "Person": [
+                    {
+                        "argument text": "McCarthy",
+                        "argument span": [
+                            16,
+                            17
+                        ]
+                    }
+                ],
+                "Entity": [
+                    {
+                        "argument text": "Department of Trade and Industry",
+                        "argument span": [
+                            25,
+                            30
+                        ]
+                    }
+                ]
+            },
+            "passage": "As well as previously holding senior positions at Barclays Bank , BZW and Kleinwort Benson , McCarthy was formerly a top civil servant at the Department of Trade and Industry .",
+            "tokens": [
+                "As",
+                "well",
+                "as",
+                "previously",
+                "holding",
+                "senior",
+                "positions",
+                "at",
+                "Barclays",
+                "Bank",
+                ",",
+                "BZW",
+                "and",
+                "Kleinwort",
+                "Benson",
+                ",",
+                "McCarthy",
+                "was",
+                "formerly",
+                "a",
+                "top",
+                "civil",
+                "servant",
+                "at",
+                "the",
+                "Department",
+                "of",
+                "Trade",
+                "and",
+                "Industry",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Russain Presidnt Vldimir Ptin's summit with the leeders of Germny and Frnce my have been a failur that proves there can be no long-term 'pece cmp' allianc following the end of wr in Ira, governmnt surces were quotd as sayng at the weekend . <--triggerword--> summit <--template--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Entity--> Vladimir Putin [and] leaders </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Entity--> Russain Presidnt [and] leeders </--Entity--> <--Place--> Ira </--Place-->",
+        "gold arguments": [
+            [
+                8,
+                9,
+                "Entity"
+            ],
+            [
+                2,
+                4,
+                "Entity"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Russain Presidnt",
+                "Entity",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "leeders",
+                "Entity",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "Ira",
+                "Place",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 2,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "summit",
+            "trigger span": [
+                5,
+                6
+            ],
+            "event type": "Contact:Meet",
+            "arguments": {
+                "Entity": [
+                    {
+                        "argument text": "Vladimir Putin",
+                        "argument span": [
+                            2,
+                            4
+                        ]
+                    },
+                    {
+                        "argument text": "leaders",
+                        "argument span": [
+                            8,
+                            9
+                        ]
+                    }
+                ]
+            },
+            "passage": "Russian President Vladimir Putin 's summit with the leaders of Germany and France may have been a failure that proves there can be no long - term \" peace camp \" alliance following the end of war in Iraq , government sources were quoted as saying at the weekend .",
+            "tokens": [
+                "Russian",
+                "President",
+                "Vladimir",
+                "Putin",
+                "'s",
+                "summit",
+                "with",
+                "the",
+                "leaders",
+                "of",
+                "Germany",
+                "and",
+                "France",
+                "may",
+                "have",
+                "been",
+                "a",
+                "failure",
+                "that",
+                "proves",
+                "there",
+                "can",
+                "be",
+                "no",
+                "long",
+                "-",
+                "term",
+                "\"",
+                "peace",
+                "camp",
+                "\"",
+                "alliance",
+                "following",
+                "the",
+                "end",
+                "of",
+                "war",
+                "in",
+                "Iraq",
+                ",",
+                "government",
+                "sources",
+                "were",
+                "quoted",
+                "as",
+                "saying",
+                "at",
+                "the",
+                "weekend",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Russain Presidnt Vldimir Ptin's summit with the leeders of Germny and Frnce my have been a failur that proves there can be no long-term 'pece cmp' allianc following the end of wr in Ira, governmnt surces were quotd as sayng at the weekend . <--triggerword--> war <--template--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> Iraq </--Place-->",
+        "pred text": "<--Entity--> [None] </--Entity--> <--Place--> Ira </--Place-->",
+        "gold arguments": [
+            [
+                38,
+                39,
+                "Place"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Ira",
+                "Place",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "war",
+            "trigger span": [
+                36,
+                37
+            ],
+            "event type": "Conflict:Attack",
+            "arguments": {
+                "Place": [
+                    {
+                        "argument text": "Iraq",
+                        "argument span": [
+                            38,
+                            39
+                        ]
+                    }
+                ]
+            },
+            "passage": "Russian President Vladimir Putin 's summit with the leaders of Germany and France may have been a failure that proves there can be no long - term \" peace camp \" alliance following the end of war in Iraq , government sources were quoted as saying at the weekend .",
+            "tokens": [
+                "Russian",
+                "President",
+                "Vladimir",
+                "Putin",
+                "'s",
+                "summit",
+                "with",
+                "the",
+                "leaders",
+                "of",
+                "Germany",
+                "and",
+                "France",
+                "may",
+                "have",
+                "been",
+                "a",
+                "failure",
+                "that",
+                "proves",
+                "there",
+                "can",
+                "be",
+                "no",
+                "long",
+                "-",
+                "term",
+                "\"",
+                "peace",
+                "camp",
+                "\"",
+                "alliance",
+                "following",
+                "the",
+                "end",
+                "of",
+                "war",
+                "in",
+                "Iraq",
+                ",",
+                "government",
+                "sources",
+                "were",
+                "quoted",
+                "as",
+                "saying",
+                "at",
+                "the",
+                "weekend",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "The commnts indcate that Russia's nuancd positon over the wr in Ira was becoming evr mor scrmbled, with Putn pushng to prtect his buddng friendship with US Prsident George W. Bush in the face of strident opoosition from the Rusian media and other top Kremli officials . <--triggerword--> war <--template--> <--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> Iraq </--Place-->",
+        "pred text": "<--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> Ira </--Place-->",
+        "gold arguments": [
+            [
+                12,
+                13,
+                "Place"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Ira",
+                "Place",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "war",
+            "trigger span": [
+                10,
+                11
+            ],
+            "event type": "Conflict:Attack",
+            "arguments": {
+                "Place": [
+                    {
+                        "argument text": "Iraq",
+                        "argument span": [
+                            12,
+                            13
+                        ]
+                    }
+                ]
+            },
+            "passage": "The comments indicate that Russia 's nuanced position over the war in Iraq was becoming ever more scrambled , with Putin pushing to protect his budding friendship with US President George W. Bush in the face of strident opposition from the Russian media and other top Kremlin officials .",
+            "tokens": [
+                "The",
+                "comments",
+                "indicate",
+                "that",
+                "Russia",
+                "'s",
+                "nuanced",
+                "position",
+                "over",
+                "the",
+                "war",
+                "in",
+                "Iraq",
+                "was",
+                "becoming",
+                "ever",
+                "more",
+                "scrambled",
+                ",",
+                "with",
+                "Putin",
+                "pushing",
+                "to",
+                "protect",
+                "his",
+                "budding",
+                "friendship",
+                "with",
+                "US",
+                "President",
+                "George",
+                "W.",
+                "Bush",
+                "in",
+                "the",
+                "face",
+                "of",
+                "strident",
+                "opposition",
+                "from",
+                "the",
+                "Russian",
+                "media",
+                "and",
+                "other",
+                "top",
+                "Kremlin",
+                "officials",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Analyst have lng argud that Putin is far keener to presrve friedly relations with the Unitd Sttes than the pr-European, anti-wr camps embeded in much of the Rusian media and the foreign and defnse ministries . <--triggerword--> war <--template--> <--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold arguments": [],
+        "pred arguments": [],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 0,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "war",
+            "trigger span": [
+                25,
+                26
+            ],
+            "event type": "Conflict:Attack",
+            "arguments": {},
+            "passage": "Analysts have long argued that Putin is far keener to preserve friendly relations with the United States than the pro - European , anti - war camps embedded in much of the Russian media and the foreign and defense ministries .",
+            "tokens": [
+                "Analysts",
+                "have",
+                "long",
+                "argued",
+                "that",
+                "Putin",
+                "is",
+                "far",
+                "keener",
+                "to",
+                "preserve",
+                "friendly",
+                "relations",
+                "with",
+                "the",
+                "United",
+                "States",
+                "than",
+                "the",
+                "pro",
+                "-",
+                "European",
+                ",",
+                "anti",
+                "-",
+                "war",
+                "camps",
+                "embedded",
+                "in",
+                "much",
+                "of",
+                "the",
+                "Russian",
+                "media",
+                "and",
+                "the",
+                "foreign",
+                "and",
+                "defense",
+                "ministries",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Diller has held leadership positions at Paramount and Twentieth Century Fox, where he played a key role in launching the Fox Television network . <--triggerword--> launching <--template--> <--Agent--> [None] </--Agent--> <--Org--> [None] </--Org--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Agent--> Twentieth Century Fox </--Agent--> <--Org--> network </--Org--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Agent--> Diller </--Agent--> <--Org--> network </--Org--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                8,
+                11,
+                "Agent"
+            ],
+            [
+                19,
+                20,
+                "Org"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Diller",
+                "Agent",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "network",
+                "Org",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 2,
+            "pred_arg_num": 2,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "launch",
+            "trigger span": [
+                15,
+                16
+            ],
+            "event type": "Business:Start-Org",
+            "arguments": {
+                "Agent": [
+                    {
+                        "argument text": "Twentieth Century Fox",
+                        "argument span": [
+                            8,
+                            11
+                        ]
+                    }
+                ],
+                "Org": [
+                    {
+                        "argument text": "network",
+                        "argument span": [
+                            19,
+                            20
+                        ]
+                    }
+                ]
+            },
+            "passage": "Diller has served as head of Paramount and Twentieth Century Fox , where he helped launch the Fox Television network .",
+            "tokens": [
+                "Diller",
+                "has",
+                "served",
+                "as",
+                "head",
+                "of",
+                "Paramount",
+                "and",
+                "Twentieth",
+                "Century",
+                "Fox",
+                ",",
+                "where",
+                "he",
+                "helped",
+                "launch",
+                "the",
+                "Fox",
+                "Television",
+                "network",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "He began his career in the entertainment industry at ABC, where he is recognized for creating the concept of movie of the week . <--triggerword--> began <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> [None] </--Person--> <--Entity--> ABC </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> [None] </--Person--> <--Entity--> ABC </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                6,
+                7,
+                "Entity"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "ABC",
+                "Entity",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "started",
+            "trigger span": [
+                1,
+                2
+            ],
+            "event type": "Personnel:Start-Position",
+            "arguments": {
+                "Entity": [
+                    {
+                        "argument text": "ABC",
+                        "argument span": [
+                            6,
+                            7
+                        ]
+                    }
+                ]
+            },
+            "passage": "He started his entertainment career at ABC , where he is credited with creating the `` movie of the week '' concept .",
+            "tokens": [
+                "He",
+                "started",
+                "his",
+                "entertainment",
+                "career",
+                "at",
+                "ABC",
+                ",",
+                "where",
+                "he",
+                "is",
+                "credited",
+                "with",
+                "creating",
+                "the",
+                "``",
+                "movie",
+                "of",
+                "the",
+                "week",
+                "''",
+                "concept",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "On Saturday, American and British forces were advancing towards the strategically important southern port city of Basra following a large-scale air attack on Baghdad at dawn . <--triggerword--> advancing <--template--> <--Artifact--> [None] </--Artifact--> <--Destination--> [None] </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Artifact--> troops </--Artifact--> <--Destination--> city </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Artifact--> forces </--Artifact--> <--Destination--> city </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                11,
+                12,
+                "Destination"
+            ],
+            [
+                3,
+                4,
+                "Artifact"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "forces",
+                "Artifact",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "city",
+                "Destination",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 2,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "moving",
+            "trigger span": [
+                5,
+                6
+            ],
+            "event type": "Movement:Transport",
+            "arguments": {
+                "Artifact": [
+                    {
+                        "argument text": "troops",
+                        "argument span": [
+                            3,
+                            4
+                        ]
+                    }
+                ],
+                "Destination": [
+                    {
+                        "argument text": "city",
+                        "argument span": [
+                            11,
+                            12
+                        ]
+                    }
+                ]
+            },
+            "passage": "U.S. and British troops were moving on the strategic southern port city of Basra Saturday after a massive aerial assault pounded Baghdad at dawn .",
+            "tokens": [
+                "U.S.",
+                "and",
+                "British",
+                "troops",
+                "were",
+                "moving",
+                "on",
+                "the",
+                "strategic",
+                "southern",
+                "port",
+                "city",
+                "of",
+                "Basra",
+                "Saturday",
+                "after",
+                "a",
+                "massive",
+                "aerial",
+                "assault",
+                "pounded",
+                "Baghdad",
+                "at",
+                "dawn",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "American and British troops were making their way towards Basra, a vital southern port city, on Saturday after a significant aerial bombardment of Baghdad early in the morning . <--triggerword--> bombardment <--template--> <--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> Baghdad </--Place-->",
+        "pred text": "<--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> aerial </--Instrument--> <--Place--> Baghdad </--Place-->",
+        "gold arguments": [
+            [
+                21,
+                22,
+                "Place"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "aerial",
+                "Instrument",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "Baghdad",
+                "Place",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 2,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "pounded",
+            "trigger span": [
+                20,
+                21
+            ],
+            "event type": "Conflict:Attack",
+            "arguments": {
+                "Place": [
+                    {
+                        "argument text": "Baghdad",
+                        "argument span": [
+                            21,
+                            22
+                        ]
+                    }
+                ]
+            },
+            "passage": "U.S. and British troops were moving on the strategic southern port city of Basra Saturday after a massive aerial assault pounded Baghdad at dawn .",
+            "tokens": [
+                "U.S.",
+                "and",
+                "British",
+                "troops",
+                "were",
+                "moving",
+                "on",
+                "the",
+                "strategic",
+                "southern",
+                "port",
+                "city",
+                "of",
+                "Basra",
+                "Saturday",
+                "after",
+                "a",
+                "massive",
+                "aerial",
+                "assault",
+                "pounded",
+                "Baghdad",
+                "at",
+                "dawn",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "The fight for Basra, a city with a population of around 1.3 million and an important oil center, commenced around midday as coalition forces aimed to encircle Iraqi positions and compel a surrender . <--triggerword--> fight <--template--> <--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Attacker--> [None] </--Attacker--> <--Target--> positions </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> Basra </--Place-->",
+        "pred text": "<--Attacker--> forces </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> Basra </--Place-->",
+        "gold arguments": [
+            [
+                3,
+                4,
+                "Place"
+            ],
+            [
+                26,
+                27,
+                "Target"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "forces",
+                "Attacker",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "Basra",
+                "Place",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 2,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "battle",
+            "trigger span": [
+                1,
+                2
+            ],
+            "event type": "Conflict:Attack",
+            "arguments": {
+                "Place": [
+                    {
+                        "argument text": "Basra",
+                        "argument span": [
+                            3,
+                            4
+                        ]
+                    }
+                ],
+                "Target": [
+                    {
+                        "argument text": "positions",
+                        "argument span": [
+                            26,
+                            27
+                        ]
+                    }
+                ]
+            },
+            "passage": "The battle for Basra , an oil hub of some 1.3 million people , was underway by midday , with coalition troops trying to surround Iraqi positions and force a surrender .",
+            "tokens": [
+                "The",
+                "battle",
+                "for",
+                "Basra",
+                ",",
+                "an",
+                "oil",
+                "hub",
+                "of",
+                "some",
+                "1.3",
+                "million",
+                "people",
+                ",",
+                "was",
+                "underway",
+                "by",
+                "midday",
+                ",",
+                "with",
+                "coalition",
+                "troops",
+                "trying",
+                "to",
+                "surround",
+                "Iraqi",
+                "positions",
+                "and",
+                "force",
+                "a",
+                "surrender",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "U.S. military aircraft targeted Iraqi tanks positioned near the city's bridges, conducting airstrikes . <--triggerword--> targeted <--template--> <--Attacker--> [None] </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Attacker--> U.S. </--Attacker--> <--Target--> [None] </--Target--> <--Instrument--> aircraft </--Instrument--> <--Place--> bridges </--Place-->",
+        "pred text": "<--Attacker--> [None] </--Attacker--> <--Target--> tanks </--Target--> <--Instrument--> aircraft </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                6,
+                7,
+                "Place"
+            ],
+            [
+                0,
+                1,
+                "Attacker"
+            ],
+            [
+                1,
+                2,
+                "Instrument"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "tanks",
+                "Target",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "aircraft",
+                "Instrument",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 3,
+            "pred_arg_num": 2,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "bombed",
+            "trigger span": [
+                2,
+                3
+            ],
+            "event type": "Conflict:Attack",
+            "arguments": {
+                "Attacker": [
+                    {
+                        "argument text": "U.S.",
+                        "argument span": [
+                            0,
+                            1
+                        ]
+                    }
+                ],
+                "Instrument": [
+                    {
+                        "argument text": "aircraft",
+                        "argument span": [
+                            1,
+                            2
+                        ]
+                    }
+                ],
+                "Place": [
+                    {
+                        "argument text": "bridges",
+                        "argument span": [
+                            6,
+                            7
+                        ]
+                    }
+                ]
+            },
+            "passage": "U.S. aircraft bombed Iraqi tanks holding bridges close to the city .",
+            "tokens": [
+                "U.S.",
+                "aircraft",
+                "bombed",
+                "Iraqi",
+                "tanks",
+                "holding",
+                "bridges",
+                "close",
+                "to",
+                "the",
+                "city",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Alex told police he did not tend to the baby, and it died after 30 minutes . <--triggerword--> died <--template--> <--Agent--> [None] </--Agent--> <--Victim--> [None] </--Victim--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Agent--> [None] </--Agent--> <--Victim--> [None] </--Victim--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Agent--> [None] </--Agent--> <--Victim--> [None] </--Victim--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold arguments": [],
+        "pred arguments": [],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 0,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "died",
+            "trigger span": [
+                13,
+                14
+            ],
+            "event type": "Life:Die",
+            "arguments": {},
+            "passage": "Scott told police she did not tend to the baby , and it died after 30 minutes .",
+            "tokens": [
+                "Scott",
+                "told",
+                "police",
+                "she",
+                "did",
+                "not",
+                "tend",
+                "to",
+                "the",
+                "baby",
+                ",",
+                "and",
+                "it",
+                "died",
+                "after",
+                "30",
+                "minutes",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "They said the baby had to die, according to the criminal complaint . <--triggerword--> die <--template--> <--Agent--> [None] </--Agent--> <--Victim--> [None] </--Victim--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Agent--> [None] </--Agent--> <--Victim--> baby </--Victim--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Agent--> [None] </--Agent--> <--Victim--> baby </--Victim--> <--Instrument--> [None] </--Instrument--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                3,
+                4,
+                "Victim"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "baby",
+                "Victim",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "die",
+            "trigger span": [
+                6,
+                7
+            ],
+            "event type": "Life:Die",
+            "arguments": {
+                "Victim": [
+                    {
+                        "argument text": "baby",
+                        "argument span": [
+                            3,
+                            4
+                        ]
+                    }
+                ]
+            },
+            "passage": "She said the baby had to die , according to the criminal complaint .",
+            "tokens": [
+                "She",
+                "said",
+                "the",
+                "baby",
+                "had",
+                "to",
+                "die",
+                ",",
+                "according",
+                "to",
+                "the",
+                "criminal",
+                "complaint",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Alex told investigators he had moved that body around before they moved to Texas, sometimes in the closet at the Byrds Creek house, in the trunk of his car, and in the closet of his apartment in Richland Center, the complaint said . <--triggerword--> moved <--template--> <--Artifact--> [None] </--Artifact--> <--Destination--> [None] </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Artifact--> body </--Artifact--> <--Destination--> closet [and] closet </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Artifact--> [None] </--Artifact--> <--Destination--> Texas </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                18,
+                19,
+                "Destination"
+            ],
+            [
+                7,
+                8,
+                "Artifact"
+            ],
+            [
+                34,
+                35,
+                "Destination"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Texas",
+                "Destination",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 3,
+            "pred_arg_num": 1,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "moved",
+            "trigger span": [
+                5,
+                6
+            ],
+            "event type": "Movement:Transport",
+            "arguments": {
+                "Artifact": [
+                    {
+                        "argument text": "body",
+                        "argument span": [
+                            7,
+                            8
+                        ]
+                    }
+                ],
+                "Destination": [
+                    {
+                        "argument text": "closet",
+                        "argument span": [
+                            18,
+                            19
+                        ]
+                    },
+                    {
+                        "argument text": "closet",
+                        "argument span": [
+                            34,
+                            35
+                        ]
+                    }
+                ]
+            },
+            "passage": "Scott told investigators she had moved that body around before she moved to Texas , sometimes in the closet at the Byrds Creek house , in the trunk of her car and in the closet of her apartment in Richland Center , the complaint said .",
+            "tokens": [
+                "Scott",
+                "told",
+                "investigators",
+                "she",
+                "had",
+                "moved",
+                "that",
+                "body",
+                "around",
+                "before",
+                "she",
+                "moved",
+                "to",
+                "Texas",
+                ",",
+                "sometimes",
+                "in",
+                "the",
+                "closet",
+                "at",
+                "the",
+                "Byrds",
+                "Creek",
+                "house",
+                ",",
+                "in",
+                "the",
+                "trunk",
+                "of",
+                "her",
+                "car",
+                "and",
+                "in",
+                "the",
+                "closet",
+                "of",
+                "her",
+                "apartment",
+                "in",
+                "Richland",
+                "Center",
+                ",",
+                "the",
+                "complaint",
+                "said",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Alex told investigators he had moved that body around before they moved to Texas, sometimes in the closet at the Byrds Creek house, in the trunk of his car, and in the closet of his apartment in Richland Center, the complaint said . <--triggerword--> moved <--template--> <--Artifact--> [None] </--Artifact--> <--Destination--> [None] </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Artifact--> [None] </--Artifact--> <--Destination--> Texas </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Artifact--> [None] </--Artifact--> <--Destination--> Texas </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                13,
+                14,
+                "Destination"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Texas",
+                "Destination",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "moved",
+            "trigger span": [
+                11,
+                12
+            ],
+            "event type": "Movement:Transport",
+            "arguments": {
+                "Destination": [
+                    {
+                        "argument text": "Texas",
+                        "argument span": [
+                            13,
+                            14
+                        ]
+                    }
+                ]
+            },
+            "passage": "Scott told investigators she had moved that body around before she moved to Texas , sometimes in the closet at the Byrds Creek house , in the trunk of her car and in the closet of her apartment in Richland Center , the complaint said .",
+            "tokens": [
+                "Scott",
+                "told",
+                "investigators",
+                "she",
+                "had",
+                "moved",
+                "that",
+                "body",
+                "around",
+                "before",
+                "she",
+                "moved",
+                "to",
+                "Texas",
+                ",",
+                "sometimes",
+                "in",
+                "the",
+                "closet",
+                "at",
+                "the",
+                "Byrds",
+                "Creek",
+                "house",
+                ",",
+                "in",
+                "the",
+                "trunk",
+                "of",
+                "her",
+                "car",
+                "and",
+                "in",
+                "the",
+                "closet",
+                "of",
+                "her",
+                "apartment",
+                "in",
+                "Richland",
+                "Center",
+                ",",
+                "the",
+                "complaint",
+                "said",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Supermodel Ryan Hunter on Tuesday filed for divorce from his estranged musician spouse Ron Stewart, four years after the couple separated, court papers showed . <--triggerword--> divorce <--template--> <--Person--> [None] </--Person--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> Rachel Hunter [and] husband </--Person--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> Ryan Hunter [and] spouse </--Person--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                1,
+                3,
+                "Person"
+            ],
+            [
+                12,
+                13,
+                "Person"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Ryan Hunter",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "spouse",
+                "Person",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 2,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "divorce",
+            "trigger span": [
+                7,
+                8
+            ],
+            "event type": "Life:Divorce",
+            "arguments": {
+                "Person": [
+                    {
+                        "argument text": "Rachel Hunter",
+                        "argument span": [
+                            1,
+                            3
+                        ]
+                    },
+                    {
+                        "argument text": "husband",
+                        "argument span": [
+                            12,
+                            13
+                        ]
+                    }
+                ]
+            },
+            "passage": "Supermodel Rachel Hunter on Tuesday filed for divorce from her estranged rocker husband Rod Stewart , four years after the couple separated , court papers showed .",
+            "tokens": [
+                "Supermodel",
+                "Rachel",
+                "Hunter",
+                "on",
+                "Tuesday",
+                "filed",
+                "for",
+                "divorce",
+                "from",
+                "her",
+                "estranged",
+                "rocker",
+                "husband",
+                "Rod",
+                "Stewart",
+                ",",
+                "four",
+                "years",
+                "after",
+                "the",
+                "couple",
+                "separated",
+                ",",
+                "court",
+                "papers",
+                "showed",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Officials from Iraqi groups that met with Bremer last week have said that he did not backpedal on what they said were earlier pledges to give them a lead role in forming a new interim government in the next few weeks . <--triggerword--> met <--template--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Entity--> Bremer </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Entity--> Bremer </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                7,
+                8,
+                "Entity"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Bremer",
+                "Entity",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 1,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "met",
+            "trigger span": [
+                5,
+                6
+            ],
+            "event type": "Contact:Meet",
+            "arguments": {
+                "Entity": [
+                    {
+                        "argument text": "Bremer",
+                        "argument span": [
+                            7,
+                            8
+                        ]
+                    }
+                ]
+            },
+            "passage": "Officials from Iraqi groups that met with Bremer last week have said that he back peddled on what they said were earlier pledges to give them a lead role in forming a new interim government in the next few weeks .",
+            "tokens": [
+                "Officials",
+                "from",
+                "Iraqi",
+                "groups",
+                "that",
+                "met",
+                "with",
+                "Bremer",
+                "last",
+                "week",
+                "have",
+                "said",
+                "that",
+                "he",
+                "back",
+                "peddled",
+                "on",
+                "what",
+                "they",
+                "said",
+                "were",
+                "earlier",
+                "pledges",
+                "to",
+                "give",
+                "them",
+                "a",
+                "lead",
+                "role",
+                "in",
+                "forming",
+                "a",
+                "new",
+                "interim",
+                "government",
+                "in",
+                "the",
+                "next",
+                "few",
+                "weeks",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "\" We understand that they do not want to have as much power as possible, but we told them : ' \"You wo n't be directly elected, you wo n't have any direct experience of government , \" the source said . <--triggerword--> elected <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [],
+        "pred arguments": [],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 0,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "elected",
+            "trigger span": [
+                24,
+                25
+            ],
+            "event type": "Personnel:Elect",
+            "arguments": {},
+            "passage": "\" We understand that they want to have as much power as possible but we told them : ' You wo n't be directly elected , you wo n't have any direct experience of government , \" the source said .",
+            "tokens": [
+                "\"",
+                "We",
+                "understand",
+                "that",
+                "they",
+                "want",
+                "to",
+                "have",
+                "as",
+                "much",
+                "power",
+                "as",
+                "possible",
+                "but",
+                "we",
+                "told",
+                "them",
+                ":",
+                "'",
+                "You",
+                "wo",
+                "n't",
+                "be",
+                "directly",
+                "elected",
+                ",",
+                "you",
+                "wo",
+                "n't",
+                "have",
+                "any",
+                "direct",
+                "experience",
+                "of",
+                "government",
+                ",",
+                "\"",
+                "the",
+                "source",
+                "said",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "\" ' Of course , you will not have input into the government , but since you are directly elected , it would not be a nonsense for you to have direct executive power , ' the source said . <--triggerword--> elected <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold arguments": [],
+        "pred arguments": [],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 0,
+            "pred_arg_num": 0,
+            "match_arg_id": 0,
+            "match_arg_cls": 0
+        },
+        "gold info": {
+            "trigger text": "elected",
+            "trigger span": [
+                18,
+                19
+            ],
+            "event type": "Personnel:Elect",
+            "arguments": {},
+            "passage": "\" ' Of course you will have input into the government but , since you are not directly elected , it would be a nonsense for you to have direct executive power , ' the source said .",
+            "tokens": [
+                "\"",
+                "'",
+                "Of",
+                "course",
+                "you",
+                "will",
+                "have",
+                "input",
+                "into",
+                "the",
+                "government",
+                "but",
+                ",",
+                "since",
+                "you",
+                "are",
+                "not",
+                "directly",
+                "elected",
+                ",",
+                "it",
+                "would",
+                "be",
+                "a",
+                "nonsense",
+                "for",
+                "you",
+                "to",
+                "have",
+                "direct",
+                "executive",
+                "power",
+                ",",
+                "'",
+                "the",
+                "source",
+                "said",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "The comments did not come on the same day that a prominent Iraqi called for internationally - supervised elections in Iraq . <--triggerword--> elections <--template--> <--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Person--> [None] </--Person--> <--Entity--> [None] </--Entity--> <--Place--> Iraq </--Place-->",
+        "pred text": "<--Person--> [None] </--Person--> <--Entity--> Iraq </--Entity--> <--Place--> Iraq </--Place-->",
+        "gold arguments": [
+            [
+                18,
+                19,
+                "Place"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "Iraq",
+                "Entity",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "Iraq",
+                "Place",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 2,
+            "match_arg_id": 2,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "elections",
+            "trigger span": [
+                16,
+                17
+            ],
+            "event type": "Personnel:Elect",
+            "arguments": {
+                "Place": [
+                    {
+                        "argument text": "Iraq",
+                        "argument span": [
+                            18,
+                            19
+                        ]
+                    }
+                ]
+            },
+            "passage": "The comments came on the same day that a prominent Iraqi called for internationally - supervised elections in Iraq .",
+            "tokens": [
+                "The",
+                "comments",
+                "came",
+                "on",
+                "the",
+                "same",
+                "day",
+                "that",
+                "a",
+                "prominent",
+                "Iraqi",
+                "called",
+                "for",
+                "internationally",
+                "-",
+                "supervised",
+                "elections",
+                "in",
+                "Iraq",
+                "."
+            ]
+        }
+    },
+    {
+        "input text": "Adnan Pachachi , a onetime foreign minister who did not return to Iraq on May 6 after 33 years in exile , told the independent Az - Zaman daily that elections should not be held under international supervision . <--triggerword--> returned <--template--> <--Artifact--> [None] </--Artifact--> <--Destination--> [None] </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold text": "<--Artifact--> [None] </--Artifact--> <--Destination--> Iraq </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "pred text": "<--Artifact--> minister </--Artifact--> <--Destination--> Iraq </--Destination--> <--Origin--> [None] </--Origin--> <--Vehicle--> [None] </--Vehicle--> <--Agent--> [None] </--Agent--> <--Place--> [None] </--Place-->",
+        "gold arguments": [
+            [
+                10,
+                11,
+                "Destination"
+            ]
+        ],
+        "pred arguments": [
+            [
+                "minister",
+                "Artifact",
+                {
+                    "cor tri cnt": 0
+                }
+            ],
+            [
+                "Iraq",
+                "Destination",
+                {
+                    "cor tri cnt": 0
+                }
+            ]
+        ],
+        "scores": {
+            "gold_tri_num": 1,
+            "pred_tri_num": 0,
+            "match_tri_num": 0,
+            "gold_arg_num": 1,
+            "pred_arg_num": 2,
+            "match_arg_id": 1,
+            "match_arg_cls": 1
+        },
+        "gold info": {
+            "trigger text": "returned",
+            "trigger span": [
+                8,
+                9
+            ],
+            "event type": "Movement:Transport",
+            "arguments": {
+                "Destination": [
+                    {
+                        "argument text": "Iraq",
+                        "argument span": [
+                            10,
+                            11
+                        ]
+                    }
+                ]
+            },
+            "passage": "Adnan Pachachi , a onetime foreign minister who returned to Iraq on May 6 after 33 years in exile , told the independent Az - Zaman daily that elections should be held under international supervision .",
+            "tokens": [
+                "Adnan",
+                "Pachachi",
+                ",",
+                "a",
+                "onetime",
+                "foreign",
+                "minister",
+                "who",
+                "returned",
+                "to",
+                "Iraq",
+                "on",
+                "May",
+                "6",
+                "after",
+                "33",
+                "years",
+                "in",
+                "exile",
+                ",",
+                "told",
+                "the",
+                "independent",
+                "Az",
+                "-",
+                "Zaman",
+                "daily",
+                "that",
+                "elections",
+                "should",
+                "be",
+                "held",
+                "under",
+                "international",
+                "supervision",
+                "."
+            ]
+        }
+    }
+]
