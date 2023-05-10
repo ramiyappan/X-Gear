@@ -1,6 +1,6 @@
 {
     "dataset": "ace05", 
-    "lang": "english", 
+    "lang": "english",  
     "gpu_device": 0,
     "seed": 0,
     "train_file": "./processed_data/ace05_en_mT5/train.json",
