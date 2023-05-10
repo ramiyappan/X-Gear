@@ -7,7 +7,7 @@ from model import GenerativeModel, Prefix_fn_cls
 from data import EEDataset
 from utils import cal_scores, get_span_idxs, get_span_idxs_zh
 from argparse import ArgumentParser, Namespace
-
+ 
 # configuration
 parser = ArgumentParser()
 parser.add_argument('-c', '--config', required=True)
